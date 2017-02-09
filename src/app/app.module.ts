@@ -7,6 +7,9 @@ import { HttpModule } from "@angular/http";
 import { ROUTING } from "./app.routing";
 
 import { HomeComponent } from "./route/home/home.component";
+import { WidgetComponent } from "./route/home/widget/widget.component";
+import { BaconComponent } from "./route/bacon/bacon.component";
+import { BaconService } from "./route/bacon/bacon.service";
 
 @NgModule({
     imports: [
@@ -17,7 +20,12 @@ import { HomeComponent } from "./route/home/home.component";
     ],
     declarations: [
         AppComponent,
-        HomeComponent
+        HomeComponent,
+        WidgetComponent,
+        BaconComponent
+    ],
+    providers: [
+        BaconService
     ],
     bootstrap: [
         AppComponent
